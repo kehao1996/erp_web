@@ -1,0 +1,14 @@
+/**index.wxss**/
+.name image{
+  width: 100%;
+  height: 326rpx;
+}
+.button{
+  margin-top: 30rpx;
+}
+.button image{
+  display: block;
+  width: 678rpx;
+  height: 144rpx;
+  margin: 8rpx auto;
+}
