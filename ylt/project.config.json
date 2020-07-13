@@ -31,13 +31,24 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 0,
+			"current": 2,
 			"list": [
 				{
 					"id": -1,
 					"name": "r",
 					"pathName": "pages/warehousing/warehousing",
 					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "e",
+					"pathName": "pages/report_date/report_date",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "m",
+					"pathName": "pages/manager/manager"
 				}
 			]
 		}

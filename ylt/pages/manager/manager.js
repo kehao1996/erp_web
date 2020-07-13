@@ -8,9 +8,9 @@ Page({
    */
   data: {
     sublist: [
-      { 
-        img:'../../images/qi1.png',
-        name:'白胎仓库'
+      {
+        img: '../../images/qi1.png',
+        name: '白胎仓库'
       },
       {
         img: '../../images/pi2.png',
@@ -33,16 +33,16 @@ Page({
         name: '烧制'
       }
     ],
-    implelist:[
+    implelist: [
       {
-        name:'',
-        img:'',
-        sun:''
+        name: '',
+        img: '',
+        sun: ''
       },
       {
-        name:'',
-        img:'',
-        sun:''
+        name: '',
+        img: '',
+        sun: ''
       }
     ]
 
@@ -52,59 +52,59 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
+
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-    
+
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    
+
   },
 
   /**
    * 生命周期函数--监听页面隐藏
    */
   onHide: function () {
-    
+
   },
 
   /**
    * 生命周期函数--监听页面卸载
    */
   onUnload: function () {
-    
+
   },
 
   /**
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function () {
-    
+
   },
 
   /**
    * 页面上拉触底事件的处理函数
    */
   onReachBottom: function () {
-    
+
   },
 
   /**
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
-    
+
   },
   // 回到首页
-  goindex () {
+  goindex() {
     wx.navigateBack({
       url: '../index/index'
     })
@@ -138,15 +138,15 @@ Page({
     })
   },
   // 点击上传图片
-  goimg(){
+  goimg() {
     wx.chooseImage({
-      success: function(res) {
+      success: function (res) {
 
       },
     })
   },
   // 点击加减
-  addplus(e){
+  addplus(e) {
     console.log(e)
     let implelist = this.data.implelist
     let muid = Number(e.currentTarget.dataset.index)
@@ -158,9 +158,9 @@ Page({
     if (e.currentTarget.dataset.inf == '1') {
       implelist.push(item)
     } else {
-      if (implelist.length > 2){
+      if (implelist.length > 2) {
         console.log(muid)
-        let listoue = implelist.splice(muid,1)
+        let listoue = implelist.splice(muid, 1)
         this.setData({
           implelist: listoue
         })
@@ -177,7 +177,7 @@ Page({
     })
   },
   // inptu双绑定名称
-  adInputChange(e){
+  adInputChange(e) {
     let i = e.currentTarget.dataset.index;
     let text = e.detail.value;
     let onsit = this.data.implelist;

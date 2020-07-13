@@ -1,0 +1,54 @@
+<view class='warehousing'>
+  <!-- 头部 -->
+  <view class='head'>
+    <image bindtap='goindex' src='../../images/indextop.png'></image>
+    <view class='head_text'>生产任务报期</view>
+  </view>
+  <!-- 头部 -->
+  <view style='width: 100%;height: 126rpx;'></view>
+  <view class='top'>
+    <!-- 头像 -->
+    <image src='../../images/taeio.jpg'></image>
+    <view class='top_text'>XXX生产任务单</view>
+  </view>
+  <!-- 图示 -->
+  <view class='product'>
+    <!-- 标题 -->
+    <image class='product_ta' src='../../images/Illustration.png'></image>
+    <image class='product_tb' src='../../images/img.png'></image>
+  </view>
+  <!-- 每个产品详情1 -->
+  <view class='implement' wx:for="[3]">
+    <view class='implement_a'>
+      <image src='../../images/qix1.png'></image>
+      <input placeholder="请输入器皿名称" bindinput="adInputChange" data-index='0'  value="{{implelist[0].name}}"></input>
+    </view>
+    <view class='implement_a'>
+      <image src='../../images/qix2.png'></image>
+      <input placeholder="999" bindinput="adInputChange" data-index='0'  value="{{implelist[0].name}}"></input>
+    </view>
+  </view>
+  <!-- 总计 -->
+  <view class='total'>
+    <view class='total_a'>
+      <image src='../../images/qix3.png'></image>
+      <input placeholder="生产数量"></input>
+    </view>
+    <view class='total_a'>
+      <image src='../../images/qix4.png'></image>
+      <input placeholder="部门所需周期"></input>
+    </view>
+    <view class='total_a'>
+      <image src='../../images/qix5.png'></image>
+      <input placeholder="暂定价"></input>
+    </view>
+    <view class='total_a'>
+      <image src='../../images/qix6.png'></image>
+      <input placeholder="协商价"></input>
+    </view>
+  </view>
+  <!-- 下达 -->
+  <view class='ware_go'>
+    <image src='../../images/tijiao.png'></image>
+  </view>
+</view>
