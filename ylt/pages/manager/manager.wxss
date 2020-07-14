@@ -217,93 +217,73 @@ page{
   width: 217rpx;
   height: 62rpx;
 }
-.bargaining{
-  height: 120rpx;
-  margin: 20rpx;
+/* 点击催单功能 */
+.reminder{
+  background-color: #fff;
+  margin: 0 20rpx;
+  margin-top: 40rpx;
+  border-radius: 30rpx;
+  padding: 20rpx;
+}
+.remindertile{
+  font-size: 32rpx;
+  color: #fff;
+  width: 342rpx;
+  height: 63rpx;
+  background-color: #081863;
+  border-radius: 33rpx;
+  text-align: center;
+  font-weight: bold;
+  line-height: 63rpx;
+  letter-spacing: 4rpx;
+  margin: 0 auto;
+  margin-bottom: 30rpx;
+}
+.reminder_cloik{
+  padding: 20rpx;
+  background-color: #f6f7fa;
+  border-radius: 30rpx;
+}
+.reminder_item{
+  display: flex;
+  align-items: flex-end;
+}
+.reminder_item_img{
   display: flex;
   align-items: center;
-  background-color: #fff;
-  border: 1rpx solid #dde3fe;
-  overflow: hidden;
+  width: 36.5%;
+}
+.reminder_item_img image{
+  width:59rpx;
+  height: 62rpx; 
+}
+.reminder_item_img view{
+  font-size: 32rpx;
+  color: #081863;
+  margin-left: 10rpx;
+}
+.reminder_item_in{
+  width: 100rpx;
+}
+.reminder_item_to{
+  width: 100rpx;
+  height: 42rpx;
+  color: #fff;
+  background-color: #081863;
+  font-size: 22rpx;
+  line-height: 42rpx;
+  text-align: center;
   border-radius: 10rpx;
 }
-.bargaining_a{
-  
-}
-.bargaining_a image{
-  display: block;
-  width: 52rpx;
-  height: 39rpx;
-  margin: 0 20rpx; 
-}
-.bargaining_a image:nth-child(2){
-  margin-top: 10rpx;
-}
-.bargaining_b{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 274rpx;
-  height: 90rpx;
-  background-color: #4f5ea8;
-  border-radius: 8rpx;
-}
-.bargaining_b image{
-  width: 59rpx;
-  height: 62rpx;
-}
-.bargaining_b view{
-  margin-left: 10rpx;
-  font-size: 30rpx;
-  color: #fff;
-}
-.bargaining_c{
-  margin-left: 20rpx;
-}
-.bargaining_c .bargaining_c_text{
-  font-size: 30rpx;
-  font-weight: bold;
-  color: #4f5ea8;
-  text-align: right;
-}
-.bargaining_c input{
-  width: 200rpx;
-  height: 50rpx;
-  background-color: #f6f7fa;
-  font-size: 30rpx;
-  color: #5a5a5b;
-  border-radius: 8rpx;
-  text-align: center;
-}
-.bargaining_d{
+.reminder_item_inp{
   width: 100rpx;
-  height: 120rpx;
-  background-color: #4f5ea8;
-  margin-left: auto;
-  position: relative;
-}
-/* .close {
-  position: absolute;
-  right: 32px;
-  top: 32px;
-  width: 32px;
-  height: 32px;
-} */
-.bargaining_d:before, .bargaining_d:after {
-  position: absolute;
-  left: 20%;
-  top: 47%;
-  content: ' ';
-  height: 10rpx;
-  width: 60rpx;
-  background-color: #fff;
-  border-radius: 5rpx;
-}
-.bargaining_d:before {
-  transform: rotate(45deg);
-}
-.bargaining_d:after {
-  transform: rotate(-45deg);
+  border-radius: 10rpx;
+  border: 1rpx solid #081863;
+  font-size: 28rpx;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  box-sizing: border-box;
 }
 /* 下达 */
 .ware_go{

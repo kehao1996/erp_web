@@ -7,32 +7,6 @@ Page({
    * 页面的初始数据
    */
   data: {
-    sublist: [
-      {
-        img: '../../images/qi1.png',
-        name: '白胎仓库'
-      },
-      {
-        img: '../../images/pi2.png',
-        name: '画'
-      },
-      {
-        img: '../../images/pi3.png',
-        name: '填'
-      },
-      {
-        img: '../../images/pi4.png',
-        name: '半成品'
-      },
-      {
-        img: '../../images/pi5.png',
-        name: '落款'
-      },
-      {
-        img: '../../images/pi6.png',
-        name: '烧制'
-      }
-    ],
     implelist: [
       {
         name: '',
@@ -43,6 +17,44 @@ Page({
         name: '',
         img: '',
         sun: ''
+      }
+    ],
+    reminderData:[
+      {
+        img:"../../images/reminder2.png",
+        name: '白胎仓库:',
+        ico: ['已有白胎'],
+        button:1
+      }, {
+        img: "../../images/reminder1.png",
+        name: '采购:',
+        ico: ['已有白胎', '采购周期','采购价'],
+        button: 2
+      }, {
+        img: "../../images/reminder3.png",
+        name: '画:',
+        ico: ['所需工期','协议价'],
+        button: 3
+      }, {
+        img: "../../images/reminder4.png",
+        name: '填:',
+        ico: [],
+        button: 4
+      }, {
+        img: "../../images/reminder5.png",
+        name: '半成品:',
+        ico: [],
+        button: 5
+      }, {
+        img: "../../images/reminder6.png",
+        name: '落款:',
+        ico: [],
+        button: 6
+      }, {
+        img: "../../images/reminder7.png",
+        name: '烧制:',
+        ico: [],
+        button: 7
       }
     ]
 
@@ -107,34 +119,6 @@ Page({
   goindex() {
     wx.navigateBack({
       url: '../index/index'
-    })
-  },
-  // 点击删除
-  del(e) {
-    let i = $attr(e, 'i')
-    this.data.sublist.splice(i, 1)
-    this.setData({
-      sublist: this.data.sublist
-    })
-  },
-  // 点击向上
-  up(e) {
-    let i = $attr(e, 'i')
-    let temp = this.data.sublist[i]
-    this.data.sublist[i] = this.data.sublist[i - 1]
-    this.data.sublist[i - 1] = temp
-    this.setData({
-      sublist: this.data.sublist
-    })
-  },
-  // 点击向下
-  down(e) {
-    let i = $attr(e, 'i')
-    let temp = this.data.sublist[i]
-    this.data.sublist[i] = this.data.sublist[i + 1]
-    this.data.sublist[i + 1] = temp
-    this.setData({
-      sublist: this.data.sublist
     })
   },
   // 点击上传图片

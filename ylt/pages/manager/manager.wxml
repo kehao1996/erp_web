@@ -84,26 +84,24 @@
       <input placeholder="请输入部门"></input>
     </view>
   </view>
-  <!-- 议价 -->
-  <view wx:for="{{sublist}}" wx:key="index">
-    <view class='bargaining'>
-      <view class='bargaining_a'>
-        <image wx:if="{{index>0}}" data-i="{{index}}" bindtap="up" src='../../images/bottom.png'></image>
-        <image wx:if="{{index<sublist.length-1}}" data-i="{{index}}" bindtap="down" src='../../images/top.png'></image>
+  <!-- 点击催单功能 -->
+  <view class='reminder'>
+    <view class='remindertile'>点击催单功能</view>
+    <view class='reminder_cloik'>
+      <view class='reminder_item'>
+        <view class='reminder_item_img'>
+          <image src='../../images/reminder2.png'></image>
+          <view>白胎仓库：</view>
+        </view>
+        <view class='reminder_item_in'>
+          <view class='reminder_item_to'>已有白胎</view>
+          <input placeholder="99999" class='reminder_item_inp'></input>
+        </view>
       </view>
-      <view class='bargaining_b'>
-        <image src='{{item.img}}'></image>
-        <view class='bargaining_b_text'>{{item.name}}</view>
-      </view>
-      <view class='bargaining_c'>
-        <view class='bargaining_c_text'>初议价</view>
-        <input placeholder='请输入价格'></input>
-      </view>
-      <view class='bargaining_d' data-i="{{index}}" bindtap="del"></view>
     </view>
   </view>
   <!-- 下达 -->
   <view class='ware_go'>
-    <image src='../../images/pi7.png'></image>
+    <image src='../../images/tijiao.png'></image>
   </view>
 </view>
