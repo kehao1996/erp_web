@@ -5,8 +5,13 @@
     <view class='head_text'>艺林堂生产ERP</view>
   </view>
   <view style='width: 100%;height: 126rpx;'></view>
-  <view class='name'>
-    <image src='../../images/topling.png'></image>
+  <view class='top'>
+    <!-- 头像 -->
+    <image class='head_nameimg' src='../../images/taeio.jpg'></image>
+    <view class='head_img'>
+      <image style='width:324rpx;height:105rpx;' src='../../images/toplan3.png'></image>
+    </view>
+    <!-- <view class='top_text'>XXX生产任务单</view> -->
   </view>
   <view class='button'>
     <image bindtap='warehousing' src='../../images/1.png'></image>

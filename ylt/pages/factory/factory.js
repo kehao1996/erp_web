@@ -19,14 +19,14 @@ Page({
         sun: ''
       }
     ],
-    reminderData:[
+    reminderData: [
       {
-        img:"../../images/reminder2.png",
+        img: "../../images/reminder2.png",
         name: '白胎仓库:',
         ico: [
-          { topname: '已有白胎', input:'99999'}
+          { topname: '已有白胎', input: '99999' }
         ],
-        out:0
+        out: 0
       }, {
         img: "../../images/reminder3.png",
         name: '采购:',
@@ -39,7 +39,7 @@ Page({
       }, {
         img: "../../images/reminder4.png",
         name: '画:',
-        ico: ['所需工期','协议价'],
+        ico: ['所需工期', '协议价'],
         ico: [
           { topname: '所需工期', input: '99999' },
           { topname: '协议价', input: '99999' }

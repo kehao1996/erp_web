@@ -3,6 +3,8 @@
     "pages/index/index",
     "pages/warehousing/warehousing",
     "pages/report_date/report_date",
+    "pages/factory/factory",
+    "pages/prd_process/prd_process",
     "pages/manager/manager"
   ],
   "window": {

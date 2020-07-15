@@ -1,0 +1,30 @@
+/* pages/prd_process/prd_process.wxss */
+page{
+  background: #f6f7fa;
+}
+/* 图示 */
+.illustration{
+  background-color: #fff;
+  border: 1rpx solid #dce2ff;
+  border-radius: 20rpx;
+  margin: 20rpx;
+  padding: 20rpx;
+  box-sizing: border-box;
+}
+.illustration_img{
+  display: block;
+  margin: 0 auto;
+  width: 631rpx;
+  height: 50rpx;
+  margin-bottom: 20rpx;
+}
+.illustration_b{
+  height: 597rpx;
+  border: 1rpx solid #dce2ff;
+  border-radius: 20rpx;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+ .illustration_b_img{
+  height:597rpx;
+} 

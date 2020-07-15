@@ -1,0 +1,25 @@
+<view class='prd_process'>
+  <!-- 头部 -->
+  <view class='head'>
+    <image bindtap='goindex' src='../../images/indextop.png'></image>
+    <view class='head_text'>005生产过程（组长）</view>
+  </view>
+  <!-- 头部 -->
+  <view style='width: 100%;height: 126rpx;'></view>
+  <view class='top'>
+    <!-- 头像 -->
+    <image class='head_nameimg' src='../../images/taeio.jpg'></image>
+    <view class='head_img'>
+      <image src='../../images/toplan2.png'></image>
+    </view>
+    <view class='top_text'>XXX生产任务单</view>
+  </view>
+  <!-- 图示 -->
+  <view class='illustration'>
+    <image class='illustration_img' src='../../images/ilimg.png'></image>
+    <view class='illustration_b'>
+      <image mode="aspectFill" class='illustration_b_img' src='../../images/img.png'></image>
+    </view>
+  </view>
+  
+</view>
