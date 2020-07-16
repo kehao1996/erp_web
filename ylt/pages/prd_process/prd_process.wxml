@@ -21,5 +21,27 @@
       <image mode="aspectFill" class='illustration_b_img' src='../../images/img.png'></image>
     </view>
   </view>
-  
+  <!-- 产品 -->
+  <view class='preitem'>
+    <view class='preitem_i'>
+      <image src='../../images/prd1.png'></image>
+      <view class='preitem_i_y'>
+        <view class='preitem_i_name'>器形名称:</view>
+        <view class='preitem_i_n'>(花鸟)</view>
+      </view>
+      <view class='preitem_i_input'>
+        <input placeholder="请输入器皿名称"></input>
+      </view>
+    </view>
+    <view class='preitem_i'>
+      <image src='../../images/prd1.png'></image>
+      <view class='preitem_i_y'>
+        <view class='preitem_i_name'>器形名称:</view>
+      </view>
+      <view class='preitem_i_input'>
+        <input placeholder="请输入器皿名称"></input>
+        <view class='preitem_i_btn'>确认</view>
+      </view>
+    </view>
+  </view>
 </view>
