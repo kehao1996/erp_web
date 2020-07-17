@@ -47,6 +47,7 @@ page{
   height: 62rpx;
 }
 .preitem_i_name{
+  width: 140rpx;
   font-size: 32rpx;
   color: #080163;
   margin-left: 15rpx;

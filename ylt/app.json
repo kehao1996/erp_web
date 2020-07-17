@@ -5,6 +5,8 @@
     "pages/report_date/report_date",
     "pages/factory/factory",
     "pages/prd_process/prd_process",
+    "pages/salary/salary",
+    "pages/matters/matters",
     "pages/manager/manager"
   ],
   "window": {

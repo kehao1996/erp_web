@@ -1,0 +1,4 @@
+/* pages/matters/matters.wxss */
+page{
+  background: #f6f7fa;
+}

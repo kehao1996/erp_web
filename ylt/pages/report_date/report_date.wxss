@@ -91,15 +91,3 @@ page{
   font-size: 32rpx;
   text-align: center;
 }
-
-/* 下达 */
-.ware_go{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 30rpx 0;
-}
-.ware_go image{
-  width: 734rpx;
-  height: 144rpx;
-}

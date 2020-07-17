@@ -23,24 +23,28 @@
   </view>
   <!-- 产品 -->
   <view class='preitem'>
-    <view class='preitem_i'>
-      <image src='../../images/prd1.png'></image>
+    <view class='preitem_i' wx:for="{{setPrdData}}">
+      <image src='{{item.img}}'></image>
       <view class='preitem_i_y'>
-        <view class='preitem_i_name'>器形名称:</view>
-        <view class='preitem_i_n'>(花鸟)</view>
+        <view class='preitem_i_name'>{{item.name}}:</view>
+        <view wx:if="{{item.biao == 1}}" class='preitem_i_n'>(花鸟)</view>
       </view>
       <view class='preitem_i_input'>
-        <input placeholder="请输入器皿名称"></input>
+        <input placeholder="{{item.iptname}}"></input>
+        <view wx:if="{{item.btn == 1}}" class='preitem_i_btn'>确认</view>
       </view>
     </view>
-    <view class='preitem_i'>
-      <image src='../../images/prd1.png'></image>
+  </view>
+  <view class='preitem'>
+    <view class='preitem_i' wx:for="{{setPrdData}}">
+      <image src='{{item.img}}'></image>
       <view class='preitem_i_y'>
-        <view class='preitem_i_name'>器形名称:</view>
+        <view class='preitem_i_name'>{{item.name}}:</view>
+        <view wx:if="{{item.biao == 1}}" class='preitem_i_n'>(花鸟)</view>
       </view>
       <view class='preitem_i_input'>
-        <input placeholder="请输入器皿名称"></input>
-        <view class='preitem_i_btn'>确认</view>
+        <input placeholder="{{item.iptname}}"></input>
+        <view wx:if="{{item.btn == 1}}" class='preitem_i_btn'>确认</view>
       </view>
     </view>
   </view>

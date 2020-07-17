@@ -1,0 +1,17 @@
+<!--pages/matters/matters.wxml-->
+<view class='matters'>
+  <!-- 头部 -->
+  <view class='head'>
+    <image bindtap='goindex' src='../../images/indextop.png'></image>
+    <view class='head_text'>007人事审核单</view>
+  </view>
+  <!-- 头部 -->
+  <view style='width: 100%;height: 126rpx;'></view>
+  <view class='top'>
+    <!-- 头像 -->
+    <image class='head_nameimg' src='../../images/taeio.jpg'></image>
+    <view class='head_img'>
+      <view class='head_img_n'>XXX人事审核</view>
+    </view>
+  </view>
+</view>

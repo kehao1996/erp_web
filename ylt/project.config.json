@@ -31,7 +31,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 5,
+			"current": 7,
 			"list": [
 				{
 					"id": 0,
@@ -67,6 +67,18 @@
 					"id": -1,
 					"name": "05-prd_process",
 					"pathName": "pages/prd_process/prd_process",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "06-salary",
+					"pathName": "pages/salary/salary",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "07-matters",
+					"pathName": "pages/matters/matters",
 					"query": ""
 				}
 			]

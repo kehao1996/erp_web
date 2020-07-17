@@ -1,0 +1,33 @@
+<!--pages/salary/salary.wxml-->
+<view class='salary'>
+  <!-- 头部 -->
+  <view class='head'>
+    <image bindtap='goindex' src='../../images/indextop.png'></image>
+    <view class='head_text'>006薪资提交</view>
+  </view>
+  <!-- 头部 -->
+  <view style='width: 100%;height: 126rpx;'></view>
+  <view class='top'>
+    <!-- 头像 -->
+    <image class='head_nameimg' src='../../images/taeio.jpg'></image>
+    <view class='head_img'>
+      <view class='head_img_n'>XXX生产工资</view>
+    </view>
+  </view>
+  <view class='salary_block'>
+    <view class='sal_item' wx:for="{{5}}">
+      <view class='sal_item_name'>张三</view>
+      <view class='sal_item_s'>
+        <view class='sal_item_a' wx:for="{{salData}}">
+          <image src='{{item.img}}'></image>
+          <view class='sal_item_text'>{{item.name}}:</view>
+          <input placeholder="{{item.inpnam}}"></input>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 下达 -->
+  <view class='ware_go'>
+    <image src='../../images/tijiao.png'></image>
+  </view>
+</view>
