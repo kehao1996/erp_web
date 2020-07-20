@@ -286,14 +286,3 @@ page{
 .tlock_w input{
   width: 200rpx;
 }
-/* 下达 */
-.ware_go{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 30rpx 0;
-}
-.ware_go image{
-  width: 734rpx;
-  height: 144rpx;
-}

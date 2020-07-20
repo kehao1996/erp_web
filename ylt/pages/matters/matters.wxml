@@ -14,4 +14,75 @@
       <view class='head_img_n'>XXX人事审核</view>
     </view>
   </view>
+  <!-- 白胎采购 -->
+  <view class="wfpurchase">
+    <view class="wfp_tile">
+      <image src="../../images/mat1.png"></image>
+      <view>白胎采购</view>
+    </view>
+    <view class="wfp_item">
+      <view class="wfp_item_i" wx:for="{{mattersData}}">
+        <image src="{{item.img}}"></image>
+        <view class="wfp_item_name">{{item.name}}:</view>
+        <input style="{{item.btnoff == 3 ? 'width:60%;color:#c25d5d;' : ''}}" placeholder="{{item.inptname}}"></input>
+        <view wx:if="{{item.btnoff == 1}}" class="wfp_item_btn">修改</view>
+      </view>
+    </view>
+  </view>
+  <!-- 人物 -->
+  <view class="wfpurchase">
+    <!-- 组长：张三 -->
+    <view class="renwu_item">
+      <view class="wfp_tile ren_back">
+        <view>人物</view>
+      </view>
+      <view class="ren_lei">组长：张三</view>
+      <view class="wfp_item">
+        <view class="wfp_item_i" wx:for="{{mattersData}}">
+          <image src="{{item.img}}"></image>
+          <view class="wfp_item_name">{{item.name}}:</view>
+          <input style="{{item.btnoff == 3 ? 'width:60%;color:#c25d5d;' : ''}}" placeholder="{{item.inptname}}"></input>
+          <view wx:if="{{item.btnoff == 1}}" class="wfp_item_btn">修改</view>
+        </view>
+      </view>
+    </view>
+    <!-- 画师：李四 -->
+    <view class="renwu_item">
+      <view class="ren_lei" style="margin-top:30rpx;">画师：李四</view>
+      <view class="wfp_item">
+        <view class="wfp_item_i" wx:for="{{painterData}}">
+          <image src="{{item.img}}"></image>
+          <view class="wfp_item_name">{{item.name}}:</view>
+          <input style="width:60%;" placeholder="{{item.inptname}}"></input>
+        </view>
+        <view class="wfp_t_btn">
+          <image src="../../images/mat17.png"></image>
+          <view class="wfp_t_tok">
+            <view>退回原因说明</view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <!-- 画师：李四 -->
+    <view class="renwu_item">
+      <view class="ren_lei" style="margin-top:30rpx;">画师：李四</view>
+      <view class="wfp_item">
+        <view class="wfp_item_i" wx:for="{{painterData}}">
+          <image src="{{item.img}}"></image>
+          <view class="wfp_item_name">{{item.name}}:</view>
+          <input style="width:60%;" placeholder="{{item.inptname}}"></input>
+        </view>
+        <view class="wfp_t_btn">
+          <image src="../../images/mat17.png"></image>
+          <view class="wfp_t_tok">
+            <view>退回原因说明</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 下达 -->
+  <view class='ware_go'>
+    <image src='../../images/tijiao.png'></image>
+  </view>
 </view>
