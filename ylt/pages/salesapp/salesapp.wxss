@@ -1,0 +1,299 @@
+page{
+  background: #f6f7fa;
+}
+.product{
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  margin: 30rpx 20rpx 0 20rpx;
+  border-top-right-radius: 30rpx;
+  border-top-left-radius: 30rpx;
+  padding: 0 20rpx;
+  padding-bottom: 40rpx;
+}
+.product .product_ta{
+  display: block;
+  width: 146rpx;
+  height: 62rpx;
+  margin-top: 25rpx;
+}
+.product .product_tb{
+  display: block;
+  width: 445rpx;
+  height: 445rpx;
+  margin-top: 30rpx;
+  border-radius: 25rpx;
+  border: 1rpx solid #dce2ff;
+}
+.implement{
+  margin: 0 20rpx;
+  background-color: #ecefff;
+  padding-bottom: 60rpx;
+}
+.implement_a{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20rpx;
+  padding-top: 60rpx;
+}
+.implement_a image{
+  display: block;
+  width: 216rpx;
+  height: 62rpx;
+}
+.implement_a input{
+  display: block;
+  width: 430rpx;
+  height: 62rpx;
+  border: 1rpx solid #d8dfff;
+  border-radius: 30rpx;
+  background-color: #fff;
+  font-size: 32rpx;
+  text-align: center;
+}
+.implement_b{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20rpx;
+  padding-top: 30rpx;
+}
+.implement_b image{
+  width: 216rpx;
+  height: 62rpx;
+}
+.implement_b .implement_tb{
+  display: block;
+  width: 445rpx;
+  height: 445rpx;
+  border-radius: 25rpx;
+  border: 1rpx solid #dce2ff;
+}
+.implement_b .implement_b_n{
+  width: 445rpx;
+  height: 445rpx;
+  margin-top: 0rpx;
+  border-radius: 25rpx;
+  border: 1rpx solid #dce2ff;
+  background-color: #f6f7fa;
+  position: relative;
+  text-align: center;
+  line-height: 520rpx;
+  color: #dce2ff;
+  font-size: 32rpx;
+}
+.implement_b .implement_b_n .left{
+  width: 100rpx;
+  height: 16rpx;
+  background: #dce2ff;
+  border-radius: 10rpx;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.implement_b .implement_b_n .right{
+  width: 16rpx;
+  height: 100rpx;
+  background: #dce2ff;
+  border-radius: 10rpx;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.addition{
+  height: 60rpx;
+  background: #fff;
+  box-sizing: border-box;
+  padding: 0 20rpx;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.addition_a{
+  width: 60rpx;
+  height: 60rpx;
+  border: 1rpx solid #bcc3e8;
+  border-radius: 50%;
+  position: absolute;
+  top: 30rpx;
+  left: 20rpx;
+}
+.addition_b{
+  width: 60rpx;
+  height: 60rpx;
+  border: 1rpx solid #bcc3e8;
+  border-radius: 50%;
+  position: absolute;
+  top: 30rpx;
+  right: 20rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.addition_b .addition_a_e{
+  width: 50rpx;
+  height: 10rpx;
+  border-radius: 5rpx;
+  background-color: #bcc3e8;
+}
+.addition_a_q{
+  width: 50rpx;
+  height: 10rpx;
+  border-radius: 5rpx;
+  background-color: #bcc3e8;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.addition_a_w{
+  width: 10rpx;
+  height: 50rpx;
+  border-radius: 5rpx;
+  background-color: #bcc3e8;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+/* 总计 */
+.total{
+  background-color: #fff;
+  margin: 0 20rpx;
+  padding: 0 20rpx;
+  border-bottom-right-radius: 30rpx;
+  border-bottom-left-radius: 30rpx;
+  padding-top: 30rpx;
+  padding-bottom: 50rpx;
+}
+.total_a, .total_b{
+  margin-top: 30rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.total .total_a image{
+  width: 146rpx;
+  height: 62rpx;
+}
+.total .total_a input,.total .total_b input{
+  width: 430rpx;
+  height: 62rpx;
+  border: 1rpx solid #d8dfff;
+  border-radius: 30rpx;
+  background-color: #fff;
+  font-size: 32rpx;
+  text-align: center;
+}
+.total .total_b image{
+  width: 217rpx;
+  height: 62rpx;
+}
+/* 点击催单功能 */
+.reminder{
+  background-color: #fff;
+  margin: 0 20rpx;
+  margin-top: 40rpx;
+  border-radius: 30rpx;
+  padding: 20rpx;
+}
+.remindertile{
+  font-size: 32rpx;
+  color: #fff;
+  width: 342rpx;
+  height: 63rpx;
+  background-color: #081863;
+  border-radius: 33rpx;
+  text-align: center;
+  font-weight: bold;
+  line-height: 63rpx;
+  letter-spacing: 4rpx;
+  margin: 0 auto;
+  margin-bottom: 30rpx;
+}
+.reminder_cloik{
+  padding: 10rpx;
+  background-color: #f6f7fa;
+  border-radius: 30rpx;
+  padding-top: 30rpx;
+}
+.reminder_item{
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 20rpx;
+}
+.reminder_item_img{
+  display: flex;
+  align-items: center;
+  width: 35%;
+}
+.reminder_item_img image{
+  width:59rpx;
+  height: 62rpx; 
+}
+.reminder_item_img view{
+  font-size: 32rpx;
+  color: #081863;
+  margin-left: 10rpx;
+}
+.reminder_item_r{
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  width:65%;
+}
+.reminder_item_in{
+  width: 100rpx;
+  margin-left: 5rpx;
+}
+.reminder_item_t{
+  width: 100rpx;
+  height: 50rpx;
+  background-color: #387499;
+  color: #fff;
+  font-size: 30rpx;
+  text-align: center;
+  border-radius: 6rpx;
+  line-height: 50rpx;
+}
+.reminder_item_to{
+  width: 100rpx;
+  height: 42rpx;
+  color: #fff;
+  background-color: #081863;
+  font-size: 22rpx;
+  line-height: 42rpx;
+  text-align: center;
+  border-radius: 10rpx;
+}
+.reminder_item_lef{
+  display: flex;
+  align-items: center;
+}
+.reminder_item_inp{
+  width: 100rpx;
+  border-radius: 10rpx;
+  border: 1rpx solid #081863;
+  font-size: 28rpx;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  box-sizing: border-box;
+}
+.tlock{
+  padding: 20rpx 10rpx;
+}
+.tlock_w input{
+  width: 200rpx;
+}
+/* 下达 */
+.ware_go{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30rpx 0;
+}
+.ware_go image{
+  width: 734rpx;
+  height: 144rpx;
+}

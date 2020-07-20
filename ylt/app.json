@@ -7,6 +7,8 @@
     "pages/prd_process/prd_process",
     "pages/salary/salary",
     "pages/matters/matters",
+    "pages/salesapp/salesapp",
+    "pages/ppview/ppview",
     "pages/manager/manager"
   ],
   "window": {

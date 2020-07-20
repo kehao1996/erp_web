@@ -1,0 +1,34 @@
+<!--pages/ppview/ppview.wxml-->
+<view class="ppview">
+   <!-- 头部 -->
+  <view class='head'>
+    <image bindtap='goindex' src='../../images/indextop.png'></image>
+    <view class='head_text'>生产过程查看</view>
+  </view>
+  <!-- 头部 -->
+  <view style='width: 100%;height: 126rpx;'></view>
+  <view class='top'>
+    <!-- 头像 -->
+    <image class='head_nameimg' src='../../images/taeio.jpg'></image>
+    <view class='head_img'>
+      <view class='head_img_n'>XXX生产任务单</view>
+    </view>
+  </view>
+   <!-- 白胎采购 -->
+  <view class="wfpurchase">
+    <view class="wfp_tile">
+      <image src="../../images/mat1.png"></image>
+      <view>白胎采购</view>
+    </view>
+    <view class="wfp_item">
+      <view class="wfp_item_i" wx:for="{{mattersData}}">
+        <image src="{{item.img}}"></image>
+        <view class="wfp_item_name">{{item.name}}:</view>
+        <view class="ppv_iput_name">
+          <input placeholder="{{item.inptname}}"></input>
+          <view wx:if="{{item.btnoff == 1}}" class="ppv_jiaji">(加急任务冻结)</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

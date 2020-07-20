@@ -5,7 +5,18 @@
 		"es6": true,
 		"postcss": true,
 		"minified": true,
-		"newFeature": true
+		"newFeature": true,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		},
+		"useIsolateContext": true,
+		"useCompilerModule": false,
+		"userConfirmedUseCompilerModuleSwitch": false
 	},
 	"compileType": "miniprogram",
 	"libVersion": "1.9.94",
@@ -30,6 +41,10 @@
 			"currentL": -1,
 			"list": []
 		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
 		"miniprogram": {
 			"current": 7,
 			"list": [
@@ -52,10 +67,11 @@
 					"query": ""
 				},
 				{
-					"id": -1,
-					"name": "00-index",
+					"id": 3,
+					"name": "08-index",
 					"pathName": "pages/index/index",
-					"query": ""
+					"query": "",
+					"scene": null
 				},
 				{
 					"id": -1,
@@ -80,6 +96,20 @@
 					"name": "07-matters",
 					"pathName": "pages/matters/matters",
 					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "09-salesapp",
+					"pathName": "pages/salesapp/salesapp",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "10-ppview",
+					"pathName": "pages/ppview/ppview",
+					"query": "",
+					"scene": null
 				}
 			]
 		}

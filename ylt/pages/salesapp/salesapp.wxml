@@ -1,0 +1,131 @@
+<view class='warehousing'>
+  <!-- 头部 -->
+  <view class='head'>
+    <image bindtap='goindex' src='../../images/indextop.png'></image>
+    <view class='head_text'>销售提货申请</view>
+  </view>
+  <!-- 头部 -->
+  <view style='width: 100%;height: 126rpx;'></view>
+  <view class='top'>
+    <!-- 头像 -->
+    <image class='head_nameimg' src='../../images/taeio.jpg'></image>
+    <view class='head_img'>
+      <image src='../../images/toplan2.png'></image>
+    </view>
+    <view class='top_text'>XXX生产任务单</view>
+  </view>
+  <!-- 产品 -->
+  <view class='product'>
+    <!-- 标题 -->
+    <image class='product_ta' src='../../images/Illustration.png'></image>
+    <image class='product_tb' src='../../images/img.png'></image>
+  </view>
+  <!-- 每个产品详情1 -->
+  <view class='implement'>
+    <view class='implement_a'>
+      <image src='../../images/implementimg.png'></image>
+      <input placeholder="请输入器皿名称" bindinput="adInputChange" data-index='0'  value="{{implelist[0].name}}"></input>
+    </view>
+    <view class='implement_b'>
+      <image src='../../images/implement2.png'></image>
+      <view class='implement_b_n'>
+        <view wx:if="{{!implelist[0].img}}">
+          <view class='left'></view>
+          <view class='right'></view> 点击选择图片 
+        </view> 
+        <!-- 图片状态 -->
+        <image wx:else class='implement_tb' src='{{implelist[0].img}}'></image> 
+      </view> 
+    </view>
+    <view class='implement_a'>
+      <image src='../../images/implement3.png'></image>
+      <input placeholder="请输入生产数量" value="{{implelist[0].sun}}"></input>
+    </view>
+  </view>
+  <!-- 每个产品详情2 -->
+  <block wx:for="{{implelist}}" wx:key="index">
+    <view wx:if="{{index > 0}}" class='implement'>
+      <!-- 加减 -->
+      <view class='addition'>
+        <!-- 加 -->
+        <view class='addition_a' bindtap="addplus" data-inf="1">
+          <view class='addition_a_q'></view>
+          <view class='addition_a_w'></view>
+        </view>
+        <!-- 减 -->
+        <view class='addition_b' bindtap="addplus" data-inf="2" data-index="{{index}}"><view class='addition_a_e'></view></view>
+      </view>
+      <view class='implement_a'>
+        <image src='../../images/implementimg.png'></image>
+        <input bindinput="adInputChange" data-index='{{index}}' value='{{item.name}}' placeholder="请输入器皿名称"></input>
+      </view>
+      <view class='implement_b'>
+        <image src='../../images/implement2.png'></image>
+        <view class='implement_b_n' bindtap='goimg'>
+          <view wx:if="{{!item.img}}">
+            <view class='left'></view>
+            <view class='right'></view> 点击选择图片 
+          </view> 
+          <!-- 图片状态 -->
+           <image wx:else class='implement_tb' src='{{item.img}}'></image>  
+        </view> 
+      </view>
+      <view class='implement_a'>
+        <image src='../../images/implement3.png'></image>
+        <input bindinput='adinputsum' value='{{item.sun}}' placeholder="请输入生产数量"></input>
+      </view>
+    </view>
+  </block>
+  <!-- 总计 -->
+  <view class='total'>
+    <view class='total_a'>
+      <image src='../../images/implement4.png'></image>
+      <input placeholder="请输入总计件"></input>
+    </view>
+    <view class='total_b'>
+      <image src='../../images/implement5.png'></image>
+      <input placeholder="请输入部门"></input>
+    </view>
+  </view>
+  <!-- 点击催单功能 -->
+  <view class='reminder'>
+    <view class='remindertile'>点击催单功能</view>
+    <view class='reminder_cloik'>
+      <view class='reminder_item' wx:for="{{reminderData}}">
+        <view class='reminder_item_img'>
+          <image src='{{item.img}}'></image>
+          <view>{{item.name}}</view>
+        </view>
+        <view class='reminder_item_r'>
+          <view class='reminder_item_lef'>
+            <view class='reminder_item_in' wx:for="{{item.ico}}" >
+              <view wx:if="{{!item.topname == ''}}" class='reminder_item_to'>{{item.topname}}</view>
+              <input placeholder="99999" class='reminder_item_inp'></input>
+            </view>
+          </view>
+          <view wx:if="{{item.out == 1}}" class='reminder_item_t'>退回</view>
+        </view>
+      </view>
+    </view>
+    <view class='reminder_item tlock'>
+      <view class='reminder_item_img'>
+        <image src='../../images/reminder2.png'></image>
+        <view>总计：</view>
+      </view>
+      <view class='reminder_item_r'>
+        <view class='reminder_item_lef'>
+          <view class='reminder_item_in' >
+            <input placeholder="99999" class='reminder_item_inp'></input>
+          </view>
+          <view class='reminder_item_in tlock_w' >
+            <input placeholder="99999" class='reminder_item_inp'></input>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 下达 -->
+  <view class='ware_go'>
+    <image src='../../images/tijiao.png'></image>
+  </view>
+</view>

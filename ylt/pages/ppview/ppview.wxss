@@ -1,0 +1,85 @@
+/* pages/ppview/ppview.wxss */
+page{
+  background: #f6f7fa;
+}
+/* 白胎采购 */
+.wfpurchase{
+  background-color: #Fff;
+  border-radius: 30rpx;
+  padding: 20rpx;
+  margin: 20rpx;
+}
+.wfp_tile{
+  width: 631rpx;
+  height: 14rpx;
+  margin: 40rpx auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAncAAAAOCAMAAAB6pspwAAAAPFBMVEUAAADc4//V3f/M1f/M1v/Dzv/c4v/Dzv/d4//d4//Dzv/b4f/H0f/U3P/M1f/P2P/Y3//W3v/R2v/J0/98ei6oAAAACXRSTlMA9IRTFPPR0hY0JPBpAAAEeklEQVRo3u2aW5qjIBCFTSbJTFs3Lvvf6xgRTgGmswHPQ39ewLLh9xSlWTY97q/bTxUZr+ua3pu27uJwnFhnsdF+Uspu6adrFvr5RWGP8W5CRz/Zj0eul82qprntpnIH2/5yaZYljDdpHbT9kLrtoCaBioKk9/ja+/g+zGVT0HkXibKf7VgOD+3yvq17h3J4U+snXYzb6/5Ydv25UU+J6H6J1N2C1UhqlpKZ8sAEglD8gYhClE0xEHUx6u0AOzsCuEEUKy1yKEEu7s7UD5uwnzjGAM8K1NBUj5OV01H5k9GQuiCEIGQiZaaJKEoy1p8+BvHzz47dzqcezwwUjwt7J8rm2lBlgjx4voGk7sY5mwScBsyCC3AanVLUt1kuzRqZyG7q6I1k/C39KFd+kH2AVvOvtmOdEXFjhe308uCZ2zRv4D2eDgx17PHBM6zPwni9qCM3Dcxo2TF3HiO4fzPCPEcJt2eQlkuzlAcmdHUeNngdvTU92p+yz5pNSnMKNflwbYAgWpk/V0jvOwotxvOx3AcuGhZhv3lqETR8ZiLtHdCGUl5/kUo1RO4WFkpwSjOTUPetgbdcmoUFycwERNFMM/OxgDaLhHOO1gjPZIunyccQpOxMZIcw0B3UXIz78vekVgiNqdDaSu0vpptMZiYkwQW/qD0e5ozaqlPyZI4F0Iu7c9Vxc6xhe64PPiS45NxO4J6QsyMmBGGHb0jmArEq4O5QfS3PdRSMh6S0RU2b3N3nykQPPU3UMefM6NinBIl1YSEDtHPdki7uToWh7wrZHOBSX5IPRj61Kc0EakXAjzAKWQ8nfQiTU2gXqg5Jy432ihOcgrwiG2taiA3LtHRCHZfCvbpvFMv+rHRrSUH3XhzbLcvF3ZlEaGZCDeXf1+TTeuvoJJSUB3MkRSGbya2svkcgKy58W16uSkjKExXxiIH6HKqPVKjY+DaMVAzB8D3c2soG1/3YROFxcfdJExP7Jib6u6z2puojgqw689OCENj+Io0HT7xuf1/LfcQCTFFdYKKm3cUTE8K4H7j3B5Hg0UjVR7XwC2Q3RVH/Psk4XHn2VFMty1h8e6mJRCpDK0OCM8wPu5p2FONEJqR36Ct5e/67L//Gt8bBHFMwbIPZ0tYZgCb09OV8EwV5K/oooFsJ3FJdN3arWAShq644F5io4IWWfcBcoNEAQtKeKKyk69YsRZATR+Xum4hZPl283R7L8oc3ZV94kM4PQRqBQkCpME3UUTCFN7KvnmKuR3FFRkwocivur/coHzQwweu4HGehL8kHvWlF9mmv8GIU427G6pQIz9WxF0XjyVXLB4tnu37sbQaFeMSXWifxTFi9SvytdOcWI/Hac6t+Dy83id13kLRcmoXvQrmMXZ99NE7vjT0fUYHnMeCYcv8BifwnihCGFAvoJol2BcHtz7Lrca8v8RAl9Yu8so2yumMieOy+V1FZvK2iJHEMi7qbIdRodn2fPVNjAnOE7KMB3pbqRyTOOv6WAFNBwb/yaEJDRTJCCu3RDmC7x+FZfhfwH+/IyA0jcB4uAAAAAElFTkSuQmCC');
+  background-size: 100% 100%;
+}
+.wfp_tile image{
+  display: block;
+  width: 39rpx;
+  height: 42rpx;
+  margin-left: 10rpx;
+}
+.wfp_tile view{
+  font-size: 42rpx;
+  font-weight: bold;
+  color: #081863;
+  letter-spacing:10rpx;
+  margin-left: 20rpx;
+  line-height: 42rpx;
+}
+.wfp_item{
+  background-color: #f6f7fa;
+  border-radius: 30rpx;
+  padding: 20rpx;
+}
+.wfp_item_i{
+  display: flex;
+  align-items: center;
+  margin-top: 40rpx;
+}
+.wfp_item_i image{
+  width: 47rpx;
+  height: 50rpx;
+  margin-right: 10rpx;
+}
+.wfp_item_i input{ 
+  display: block;
+  width: 100%;
+  height: 70rpx;
+  border: 1rpx solid #d8dfff;
+  border-radius: 70rpx;
+  background-color: #fff;
+  font-size: 32rpx;
+  text-align: center;
+  line-height: 70rpx;
+  box-sizing: border-box;
+}
+.wfp_item_name{
+  width: 36%;
+  font-size: 32rpx;
+  color: #081863;
+}
+.wfp_item_btn{
+  font-size: 32rpx;
+  color:#081863;
+  font-weight: bold;
+  letter-spacing:5rpx;
+  padding: 20rpx 5rpx 20rpx 24rpx;
+}
+.ppv_iput_name{
+  position: relative;
+}
+.ppv_jiaji{
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  color: #a62e2e;
+  font-size: 28rpx;
+  text-align: center;
+}
