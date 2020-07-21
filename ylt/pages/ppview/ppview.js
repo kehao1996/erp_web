@@ -34,7 +34,7 @@ Page({
         img: "../../images/ppv5.png",
         name: "剩余时间",
         inptname: "36天18小时18分",
-        btnoff: 0
+        btnoff: 1
       },
       {
         img: "../../images/ppv6.png",
@@ -43,6 +43,20 @@ Page({
         btnoff: 0
       }
     ],
+    titleimg:[
+      {
+        img:"../../images/mat1.png",
+        name:"白胎采购"
+      },
+      {
+        img: "../../images/ppv7.png",
+        name: "花鸟"
+      },
+      {
+        img: "../../images/ppv8.png",
+        name: "填色"
+      },
+    ]
   },
 
   /**

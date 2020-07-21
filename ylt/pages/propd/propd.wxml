@@ -1,0 +1,79 @@
+<view class='warehousing'>
+  <!-- 头部 -->
+  <view class='head'>
+    <image bindtap='goindex' src='../../images/indextop.png'></image>
+    <view class='head_text'>成厂入库接收</view>
+  </view>
+  <!-- 头部 -->
+  <view style='width: 100%;height: 126rpx;'></view>
+  <view class='top'>
+    <!-- 头像 -->
+    <image class='head_nameimg' src='../../images/taeio.jpg'></image>
+    <view class='head_img'>
+      <image src='../../images/toplan2.png'></image>
+    </view>
+    <view class='top_text'>XXX生产任务单</view>
+  </view>
+  <!-- 产品 -->
+  <view class='product'>
+    <view class='product_item'>
+      <view class='product_item_name'>
+        <image src='../../images/prd1.png'></image>
+        <view class="product_item_text">器形名称：</view>
+      </view>
+      <input placeholder="请输入器皿名称" bindinput="adInputChange" data-index='0'  value="{{implelist[0].name}}"></input>
+    </view>
+    <!-- 标题 -->
+    <view class="product_item_img">
+      <image class='product_ta' src='../../images/Illustration.png'></image>
+      <image class='product_tb' src='../../images/img.png'></image>
+    </view>
+    <view class='product_item' style="align-items: flex-start;">
+      <view class='product_item_name'>
+        <image src='../../images/pro1.png'></image>
+        <view class="product_item_text">缺额：</view>
+      </view>
+      <textarea class="product_textarea" placeholder="请输入器皿名称" ></textarea >
+    </view>
+    <view class='product_item'>
+      <view class='product_item_name'>
+        <image src='../../images/pro2.png'></image>
+        <view class="product_item_text">采购价：</view>
+      </view>
+      <input value="9999.99元"></input>
+    </view>
+  </view>
+  <!-- 产品 -->
+  <view class='product'>
+    <view class='product_item'>
+      <view class='product_item_name'>
+        <image src='../../images/prd1.png'></image>
+        <view class="product_item_text">器形名称：</view>
+      </view>
+      <input placeholder="请输入器皿名称" bindinput="adInputChange" data-index='0'  value="{{implelist[0].name}}"></input>
+    </view>
+    <!-- 标题 -->
+    <view class="product_item_img">
+      <image class='product_ta' src='../../images/Illustration.png'></image>
+      <image class='product_tb' src='../../images/img.png'></image>
+    </view>
+    <view class='product_item' style="align-items: flex-start;">
+      <view class='product_item_name'>
+        <image src='../../images/pro1.png'></image>
+        <view class="product_item_text">缺额：</view>
+      </view>
+      <textarea class="product_textarea" placeholder="请输入器皿名称" ></textarea >
+    </view>
+    <view class='product_item'>
+      <view class='product_item_name'>
+        <image src='../../images/pro2.png'></image>
+        <view class="product_item_text">采购价：</view>
+      </view>
+      <input value="9999.99元"></input>
+    </view>
+  </view>
+  <!-- 下达 -->
+  <view class='ware_go'>
+    <image src='../../images/tijiao.png'></image>
+  </view>
+</view>

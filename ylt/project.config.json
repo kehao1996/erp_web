@@ -110,6 +110,20 @@
 					"pathName": "pages/ppview/ppview",
 					"query": "",
 					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "11-ppview_man",
+					"pathName": "pages/ppview_man/ppview_man",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "12-propd",
+					"pathName": "pages/propd/propd",
+					"query": "",
+					"scene": null
 				}
 			]
 		}

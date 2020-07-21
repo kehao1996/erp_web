@@ -9,6 +9,8 @@
     "pages/matters/matters",
     "pages/salesapp/salesapp",
     "pages/ppview/ppview",
+    "pages/ppview_man/ppview_man",
+    "pages/propd/propd",
     "pages/manager/manager"
   ],
   "window": {
